@@ -1,0 +1,208 @@
+
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("fm7.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(5px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  #navbar{
+    padding-top: 0cm;
+      display: flex ;
+      justify-content: left;
+      position: sticky;
+      
+      align-items: center;
+      background-color: black;
+      height: 94px;    
+        }
+  
+      
+  
+      #beechka {
+        margin-right: 1cm;           /*image ka distance*/
+        margin-left: 1cm;
+        
+      }
+  
+      #beechka img{
+        height: 2.3cm;
+        width: 2.5cm;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        
+      }
+      .firstname{
+        margin-left: 3cm;
+        
+      }
+  
+      #navbar div{
+          color: violet;               /*font color of hyper gaming*/
+          background-color:black;    /*hg bg color*/
+          font-size: 2.1rem;
+           
+      }
+  
+       #navbar ul{
+        display: flex;
+        color: rgb(253, 82, 188);
+        
+      
+       }
+  
+      #navbar ul li{
+        list-style: none;
+        font-size: 1.5rem;
+        margin-left: 1.4cm;     /*buttons ka distance*/
+       }
+  
+      #navbar ul li a{
+        color: white;
+      display: inline-block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+      
+      }
+  
+       #navbar ul li a:hover{
+        color: purple;
+        background-color: white;
+      }
+
+      /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.bg-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.bg-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  #navbar ul {
+    display: none;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 9.1cm;
+  }
+  .burger-icons .lines {
+    display: block !important;
+    justify-content: flex-end;
+    display: flex;
+
+  }
+  
+#navbar div{
+  font-size: 1.5rem;
+justify-content: center;  
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 250px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: violet;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: violet;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+}
+@media only screen and (min-width: 1030px) {
+.sidepanel{
+  display: none;
+}
+.openbtn{
+  display: none;
+}
+}
+

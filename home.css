@@ -1,0 +1,249 @@
+*{
+    padding-top: 0cm;
+    padding-bottom: 0cm; 
+    background-color: black; 
+    color: red;
+    
+  }
+ 
+  #navbar{
+    padding-top: 0cm;
+      display: flex ;
+      justify-content: left;
+      position: sticky;
+      
+      align-items: center;
+      background-color: black;
+      height: 94px;    
+        }
+
+      
+
+      #beechka {
+        margin-right: 1cm;           /*image ka distance*/
+        margin-left: 1cm;
+        
+      }
+
+      #beechka img{
+        height: 2.3cm;
+        width: 2.5cm;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        
+      }
+      .firstname{
+        margin-left: 3cm;
+        
+      }
+
+      #navbar div{
+          color: red ;               /*font color of hyper gaming*/
+          background-color:black;    /*hg bg color*/
+          font-size: 2.1rem;
+           
+      }
+
+       #navbar ul{
+        display: flex;
+        color: rgb(253, 82, 188);
+        
+      
+       }
+
+      #navbar ul li{
+        list-style: none;
+        font-size: 1.5rem;
+        margin-left: 1.4cm;     /*buttons ka distance*/
+       }
+
+      #navbar ul li a{
+        color: white;
+      display: inline-block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+      
+      }
+
+       #navbar ul li a:hover{
+        color: red;
+        background-color: white;
+      }
+
+#samneka p 
+{
+  color: green;
+  background-color: black;
+}
+ #samneka{
+   background-color: black;
+ }
+    #samneka img{
+      height: 10cm;
+      width: 10cm;
+      margin-left: 15cm;
+      padding-top: 5cm;
+    }
+    
+/* Style the video: 100% width and height to cover the entire window */
+/*#myVideo {
+  position: relative;
+  width: 100%;
+  
+}
+
+/* Add some content at the bottom of the video/page */
+/*.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+/*#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}*/
+
+/*16:9 aspect ratio*/
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+
+.container {
+  padding-top: 66.66%; /* 3:2 Aspect Ratio */
+}
+
+.container {
+  padding-top: 62.5%; /* 8:5 Aspect Ratio */
+}
+
+
+/*responsiveness*/
+.burger-icons {
+  cursor: pointer;
+}
+
+.burger-icons .lines {
+  width: 1rem;
+  margin-top: 3px;
+  height: 2px;
+  background-color: white;
+  display: none;
+}
+
+@media only screen and (max-width: 1030px) {
+  #navbar ul {
+    display: none;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 9.1cm;
+  }
+  .burger-icons .lines {
+    display: block !important;
+    justify-content: flex-end;
+    display: flex;
+
+  }
+  
+#navbar div{
+  font-size: 1.5rem;
+justify-content: center;  
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 250px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+}
+@media only screen and (min-width: 1030px) {
+.sidepanel{
+  display: none;
+}
+.openbtn{
+  display: none;
+}
+}
